@@ -1,0 +1,39 @@
+.prologue
+    position: relative
+
+    & > *
+        position: relative
+
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 0
+        content: ''
+        background-color: #55626C
+        background-image: url('../img/mountain.jpg')
+        background-repeat: no-repeat
+        background-position: 100% 0%
+        background-size: 100% auto
+
+    &::after
+        position: absolute
+        bottom: 0
+        display: block
+        content: ''
+        width: 100%
+        background-color: white
+        -webkit-clip-path: polygon(0% 100%, 0% 0%, 20% 40%, 20% 0%, 50% 100%, 80% 0%, 80% 40%, 100% 0%, 100% 100%)
+        clip-path: polygon(0% 100%, 0% 0%, 20% 40%, 20% 0%, 50% 100%, 80% 0%, 80% 40%, 100% 0%, 100% 100%)
+
+    &-mask::after
+        height: 60px
+
+    &-nomask::after
+        height: 0
+
+    &-blur::before
+        -webkit-filter: blur(5px)
+        filter: blur(5px)

@@ -1,0 +1,25 @@
+.page_header,
+.page_content,
+.page_footer
+    position: relative
+    outline: 1px dotted orange
+
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        content: ''
+        padding: 0 15px
+        outline: 1px dotted darkgray
+        outline-color: orange
+        background-color: orange
+        z-index: 500
+
+.page_header::before
+    content: '.page_header'
+
+.page_content::before
+    content: '.page_content'
+
+.page_footer::before
+    content: '.page_footer'
