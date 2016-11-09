@@ -29,5 +29,5 @@
         "build": "gulp build",
         "test": "gulp test",
         "start": "gulp connect"
-    },
+    }
 }
