@@ -9,32 +9,97 @@
 
 <body>
     <header class="header">
-        <section class="header__column">
-            <a class="menu_item" href="info">Информация</a>
-            <a class="menu_item" href="gallery">Фото и Видео</a>
-        </section>
-        <section class="header__column">
-            <a class="menu_item" href="map">Карта штата</a>
-            <a class="menu_item" href="hotels.html">Гостиницы</a>
-        </section>
-        <a href="/" class="header__logo">
+        <nav class="menu">
+            <ul class="menu-group">
+                <li class="menu_item menu_item-active">
+                    <a href="info">Информация</a>
+                </li>
+                <li class="menu_item">
+                    <a href="gallery">Фото и Видео</a>
+                </li>
+            </ul>
+            <ul class="menu-group">
+                <li class="menu_item">
+                    <a href="map">Карта штата</a>
+                </li>
+                <li class="menu_item">
+                    <a href="hotels.html">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="/" class="logo">
             <img src="img/menu-logo.png" width="140" height="70" alt="City Sedona">
         </a>
     </header>
 
-    <main>
-        <header class="prologue prologue-mask">
-            <img class="slogan" src="img/slogan.png" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks" width="460" height="350" />
-        </header>
+    <section class="prologue prologue-mask">
+        <img class="slogan" src="img/slogan.png" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks" width="460" height="350" />
+    </section>
 
-        <section class="content">
+    <main class="content">
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон</p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature main-feature">
+                    <h2>Настоящий городок</h2>
+                    <div class="number">№1</div>
+                    <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="feature double-feature">
+                    <img src="img/open-range.jpg" width="1600" height="800" alt="Open Range">
+                </div>
+            </div>
 
-        </section>
+            <div class="content-row">
+                <div class="feature accommodation">
+                    <h2>Жилье</h2>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
+                <div class="feature food">
+                    <h2>Еда</h2>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+                <div class="feature souvenirs">
+                    <h2>Сувениры</h2>
+                    <p>Не только китайского, но и местного производства!</p>
+                </div>
+            </div>
 
-        <footer class="epilogue">
-            <div class="map no-js"></div>
-        </footer>
+            <div class="content-row right-block-position">
+                <div class="feature double-feature">
+                    <img src="img/devils-bridge.jpg" width="1600" height="800" alt="Devils bridge">
+                </div>
+                <div class="feature main-feature">
+                    <h2>Там есть мост дьявола</h2>
+                    <div class="number">№2</div>
+                    <p>Да, по нему можно пройти если конечно вы осмелитесь</p>
+                </div>
+            </div>
+
+            <div class="content-row alt-content-row">
+                <div class="feature ">
+                    <h2>Небольшая площадь</h2>
+                    <div class="number">№3</div>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </div>
+                <div class="feature">
+                    <h2>Красивая дорога</h2>
+                    <div class="number">№4</div>
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+                <div class="feature">
+                    <h2>Мало туристов</h2>
+                    <div class="number">№5</div>
+                    <p>Большинство едет в Гранд Каньон и толпиться там</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <section class="epilogue">
+        <div class="map no-js"></div>
+    </section>
 
     <footer class="footer">
         <section class="footer__column">

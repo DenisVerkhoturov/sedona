@@ -1,17 +1,47 @@
-.menu_item
-    font-size: 14px
-    font-weight: 700
-    line-height: 25px
+.menu
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+    width: 100%
+    background-color: white
 
-    padding-top: 15px
-    padding-bottom: 15px
+    .menu-group
+        flex: 0 0 40%
+        display: flex
+        justify-content: space-between
+        flex-flow: row wrap
+        padding: 0
+        margin: 15px
+        list-style: none
 
-    text-decoration: none
-    text-transform: uppercase
+        &:nth-child(odd)
+            text-align: left
+            margin-left: 6%
 
-    color: $primary-color
+        &:nth-child(even)
+            text-align: right
+            margin-right: 6%
 
-    flex: 1 1 auto
+    .menu_item
+        font-size: 14px
+        font-weight: 700
+        line-height: 25px
 
-    &-active
-        color: $accent-color
+        text-transform: uppercase
+
+        flex: 1 1 auto
+
+        a
+            text-decoration: none
+            color: $primary-color
+            transition: color 100ms linear
+
+        a:hover
+            color: $accent-color
+
+        a:active
+            color: $secondary-color
+
+        &-active
+            a, a:hover
+                color: $secondary-color

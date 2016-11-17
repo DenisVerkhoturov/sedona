@@ -1,0 +1,49 @@
+input[type='checkbox']
+    display: none
+
+    & + label
+        position: relative
+        display: block
+        cursor: pointer
+        padding-left: 40px
+
+        &::before
+            position: absolute
+            top: 0
+            left: 0
+            font-family: 'iconic'
+            content: '\2610'
+            color: white
+            font-size: 26px
+
+    &:checked + label::before
+        content: '\2611'
+
+    &:disabled + label::before
+        color: $secondary-color
+
+input[type='radio']
+    display: none
+
+    & + label
+        cursor: pointer
+        color: $secondary-color
+        border-bottom: 1px dotted $primary-color
+
+        &:hover
+            color: $primary-color
+
+        &:active
+            color: $accent-color
+            border: none
+
+    &:checked + label
+        color: $accent-color
+        border: none
+        cursor: default
+
+legend
+    font-size: 16px
+    font-weight: 700
+    line-height: 20px
+    margin-bottom: 10px

@@ -1,0 +1,33 @@
+.hotel
+
+    &__rating
+        text-align: center
+        background: whitesmoke
+        padding: 0 5px
+
+    &__stars
+        height: 25px
+        line-height: 25px
+        font-size: 25px
+        text-indent: 100%
+        white-space: nowrap
+        overflow: hidden
+
+        &::before
+            display: block
+            text-indent: 0
+            content: '\2605'
+            font-weight: 400
+            color: $accent-color
+
+    &__stars-2::before
+        content: '\2605\2605'
+
+    &__stars-3::before
+        content: '\2605\2605\2605'
+
+    &__stars-4::before
+        content: '\2605\2605\2605\2605'
+
+    &__stars-5::before
+        content: '\2605\2605\2605\2605\2605'

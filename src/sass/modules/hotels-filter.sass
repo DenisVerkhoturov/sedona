@@ -1,0 +1,59 @@
+.hotels-filter
+    padding: 30px 6% 5px
+    color: white
+
+    &::after
+        display: table
+        content: ''
+        clear: both
+
+    legend
+        margin-bottom: 25px
+
+    &__infrastructure,
+    &__type
+        float: left
+        width: 20%
+        margin-right: 5%
+
+        label
+            margin-bottom: 25px
+
+    &__price
+        float: right
+        font-size: 0
+        width: 30%
+
+        legend
+            margin-bottom: 10px
+
+        input, label
+            display: inline-block
+            vertical-align: middle
+            padding: 5px
+            line-height: 21px
+            color: white
+            text-align: center
+            border: none
+            font-size: 14px
+            width: 25%
+            background: transparent
+            box-sizing: border-box
+            border-top: 2px solid white
+            border-bottom: 2px solid white
+
+        input
+            text-align: left
+
+        label
+            text-align: right
+
+
+        label:first-of-type
+            border-left: 2px solid white
+
+        input:first-of-type
+            border-right: 2px solid white
+
+        input:last-of-type
+            border-right: 2px solid white

@@ -4,7 +4,24 @@
     justify-content: space-between
 
     .hotel
-        display: flex
-        flex-flow: row nowrap
+        position: relative
         padding: 15px 6%
         border-bottom: 1px solid $secondary-color
+
+        &__picture
+            float: left
+            margin-right: 35px
+
+        &__title
+            margin: 0
+
+        &__rating
+            position: absolute
+            bottom: 15px
+            right: 6%
+
+        &__stars
+            position: absolute
+            top: 15px
+            right: 6%
+            text-align: right
