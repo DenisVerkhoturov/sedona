@@ -4,24 +4,39 @@
     justify-content: space-between
 
     .hotel
-        position: relative
-        padding: 15px 6%
+        display: flex
+        flex-flow: row nowrap
+        padding: 30px 6%
         border-bottom: 1px solid $secondary-color
 
         &__picture
+            flex: 0 0 135px
+            margin-right: 30px
+
+        &__info
+            flex: 1 0 auto
+
+        &__evaluation
+            flex: 0 0 auto
+
+        &__type,
+        &__price
+            margin-bottom: 15px
+
+        .btn-more,
+        .btn-booking
+            padding: 5px 15px
+            font-size: 14px
+            font-weight: bold
+            line-height: 14px
+            text-decoration: none
+
+        &__type,
+        &__price,
+        .btn-more,
+        .btn-booking
             float: left
-            margin-right: 35px
+            margin-right: 5px
 
-        &__title
-            margin: 0
-
-        &__rating
-            position: absolute
-            bottom: 15px
-            right: 6%
-
-        &__stars
-            position: absolute
-            top: 15px
-            right: 6%
-            text-align: right
+        .btn-more
+            clear: left
