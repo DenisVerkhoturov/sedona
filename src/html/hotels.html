@@ -4,35 +4,32 @@
 <head>
     <title>Sedona | Гостиницы</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
     <header class="header">
         <nav class="menu">
-            <ul class="menu-group">
-                <li class="menu_item">
-                    <a href="info">Информация</a>
-                </li>
-                <li class="menu_item">
-                    <a href="gallery">Фото и Видео</a>
-                </li>
-            </ul>
-            <ul class="menu-group">
-                <li class="menu_item">
-                    <a href="map">Карта штата</a>
-                </li>
-                <li class="menu_item menu_item-active">
-                    <a href="hotels.html">Гостиницы</a>
-                </li>
-            </ul>
+            <div class="menu__item">
+                <a href="info">Информация</a>
+            </div>
+            <div class="menu__item _active">
+                <a href="hotels.html">Гостиницы</a>
+            </div>
+            <div class="menu__item">
+                <a href="gallery">Фото и Видео</a>
+            </div>
+            <div class="menu__item">
+                <a href="map">Карта штата</a>
+            </div>
         </nav>
         <a href="/" class="logo">
             <img src="img/menu-logo.png" width="140" height="70" alt="City Sedona">
         </a>
     </header>
 
-    <section class="prologue prologue-blur">
+    <aside class="prologue _blur">
         <form class="hotels-selection-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="hotels-filter">
                 <fieldset class="hotels-filter__infrastructure">
@@ -91,13 +88,13 @@
                 </fieldset>
             </div>
         </form>
-    </section>
+    </aside>
 
     <main class="content">
         <div class="hotels-list">
             <article class="hotel">
                 <div class="hotel__picture">
-                    <img src="http://placehold.it/135x90" width="135" height="90">
+                    <img src="http://placehold.it/135x90" width="135" height="90" alt="">
                 </div>
                 <div class="hotel__info">
                     <h2 class="hotel__title">Amara Resort &amp; SPA</h2>
@@ -113,7 +110,7 @@
             </article>
             <article class="hotel">
                 <div class="hotel__picture">
-                    <img src="http://placehold.it/135x90" width="135" height="90">
+                    <img src="http://placehold.it/135x90" width="135" height="90" alt="">
                 </div>
                 <div class="hotel__info">
                     <h2 class="hotel__title">Desert Quail Inn</h2>
@@ -129,7 +126,7 @@
             </article>
             <article class="hotel">
                 <div class="hotel__picture">
-                    <img src="http://placehold.it/135x90" width="135" height="90">
+                    <img src="http://placehold.it/135x90" width="135" height="90" alt="">
                 </div>
                 <div class="hotel__info">
                     <h2 class="hotel__title">Villas At Poco Diablo</h2>
@@ -146,21 +143,21 @@
         </div>
     </main>
 
-    <section class="epilogue"></section>
+    <aside class="epilogue"></aside>
 
     <footer class="footer">
-        <section class="footer__column">
-            <a href="" class="hashtag">#VisitSedona</a>
+        <section class="hashtag">
+            <a href="#VisitSedona">#VisitSedona</a>
         </section>
-        <section class="footer__column">
-            <a href="#twitter" class="social-btn">twitter.com</a>
-            <a href="#facebook" class="social-btn">facebook.com</a>
-            <a href="#youtube" class="social-btn">youtube.com</a>
+        <section class="social">
+            <a href="#twitter" class="social__twitter" title="twitter.com">twitter</a>
+            <a href="#facebook" class="social__facebook" title="facebook.com">facebook</a>
+            <a href="#youtube" class="social__youtube" title="youtube.com">youtube</a>
         </section>
-        <section class="footer__column">
+        <section class="copyright">
             <span>Website by</span>
-            <a href="http://htmlacademy.ru">
-                <img src="http://placehold.it/115x40" alt="HTML Academy" width="115" height="40" />
+            <a href="http://htmlacademy.ru" title="htmlacademy.ru">
+                <img src="img/html-academy.png" alt="HTML Academy" width="115" height="40" />
             </a>
         </section>
     </footer>

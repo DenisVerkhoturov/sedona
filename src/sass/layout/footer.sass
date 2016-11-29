@@ -1,17 +1,15 @@
 .footer
-    position: absolute
-    bottom: 0
-
     display: flex
 
     width: 100%
+    padding: 40px 0
 
+    align-items: center
     justify-content: space-between
-    flex-flow: row nowrap
-    background-color: white
-    opacity: 0.7
+    flex-flow: row wrap
 
-    &__column
-        min-height: 100px
+    &.--absolute
+        position: absolute
+        bottom: 0
 
-        flex: 0 0 33.33%
+        background-color: rgba(255, 255, 255, .7)

@@ -4,35 +4,32 @@
 <head>
     <title>Sedona | Главная</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
 
 <body>
     <header class="header">
         <nav class="menu">
-            <ul class="menu-group">
-                <li class="menu_item menu_item-active">
-                    <a href="info">Информация</a>
-                </li>
-                <li class="menu_item">
-                    <a href="gallery">Фото и Видео</a>
-                </li>
-            </ul>
-            <ul class="menu-group">
-                <li class="menu_item">
-                    <a href="map">Карта штата</a>
-                </li>
-                <li class="menu_item">
-                    <a href="hotels.html">Гостиницы</a>
-                </li>
-            </ul>
+            <div class="menu__item">
+                <a href="info">Информация</a>
+            </div>
+            <div class="menu__item">
+                <a href="hotels.html">Гостиницы</a>
+            </div>
+            <div class="menu__item">
+                <a href="gallery">Фото и Видео</a>
+            </div>
+            <div class="menu__item">
+                <a href="map">Карта штата</a>
+            </div>
         </nav>
         <a href="/" class="logo">
             <img src="img/menu-logo.png" width="140" height="70" alt="City Sedona">
         </a>
     </header>
 
-    <section class="prologue prologue-mask">
+    <section class="prologue">
         <img class="slogan" src="img/slogan.png" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks" width="460" height="350" />
     </section>
 
@@ -101,18 +98,18 @@
         <div class="map no-js"></div>
     </section>
 
-    <footer class="footer">
-        <section class="footer__column">
-            <a href="" class="hashtag">#VisitSedona</a>
+    <footer class="footer _absolute">
+        <section class="hashtag">
+            <a href="#VisitSedona">#VisitSedona</a>
         </section>
-        <section class="footer__column">
-            <a href="#twitter" class="social-btn">twitter.com</a>
-            <a href="#facebook" class="social-btn">facebook.com</a>
-            <a href="#youtube" class="social-btn">youtube.com</a>
+        <section class="social">
+            <a href="#twitter" class="social__btn" title="twitter.com">twitter</a>
+            <a href="#facebook" class="social__btn" title="facebook.com">facebook</a>
+            <a href="#youtube" class="social__btn" title="youtube.com">youtube</a>
         </section>
-        <section class="footer__column">
+        <section class="copyright">
             <span>Website by</span>
-            <a href="http://htmlacademy.ru">
+            <a href="http://htmlacademy.ru" title="htmlacademy.ru">
                 <img src="http://placehold.it/115x40" alt="HTML Academy" width="115" height="40" />
             </a>
         </section>

@@ -18,6 +18,7 @@ rules:
       exclude:
         - breakpoint
         - mq
+        - clearfix
 
   no-warn: 1
   no-debug: 1
