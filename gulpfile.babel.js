@@ -4,6 +4,7 @@ import sass from 'gulp-sass';
 import sassLint from 'gulp-sass-lint';
 import connect from 'gulp-connect';
 import rename from 'gulp-rename';
+import ghPages from 'gulp-gh-pages';
 
 /**
  * HTML task
@@ -102,3 +103,8 @@ gulp.task('test', ['lint'], () => {
 });
 
 gulp.task('default', ['build']);
+
+gulp.task('deploy', ['build'], () => {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
+});
