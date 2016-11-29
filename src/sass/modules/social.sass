@@ -1,0 +1,41 @@
+.social
+    display: flex
+
+    width: 33.33%
+
+    flex-flow: row nowrap
+    align-items: center
+    justify-content: center
+
+    &__twitter,
+    &__facebook,
+    &__youtube
+        text-indent: 100%
+        white-space: nowrap
+        overflow: hidden
+        margin-right: 5px
+
+        text-align: center
+        text-transform: none
+        text-decoration: none
+
+    &__twitter::before,
+    &__facebook::before,
+    &__youtube::before
+        display: block
+        font-family: 'iconic'
+        font-size: 18px
+        line-height: 18px
+        padding: 15px
+        text-indent: 0
+        color: white
+        background: $accent-color
+
+    &__twitter::before
+        content: '\74'
+
+    &__facebook::before
+        content: '\66'
+
+    &__youtube::before
+        content: '\f39e'
